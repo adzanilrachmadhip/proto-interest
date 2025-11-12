@@ -59,12 +59,12 @@
                         <div class="hero-image-box-1">
                             <div class="hero-img">
                                 <figure class="image-anime reveal">
-                                    <img src="images/hero-img-1.jpg" alt="">
+                                    <img src="{{ asset('images/hero-img-1.jpg') }}" alt="">
                                 </figure>
                             </div>
                             <div class="hero-img">
                                 <figure class="image-anime reveal">
-                                    <img src="images/hero-img-2.jpg" alt="">
+                                    <img src="{{ asset('images/hero-img-1.jpg') }}" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -80,12 +80,12 @@
                         <div class="hero-image-box-1">
                             <div class="hero-img">
                                 <figure class="image-anime reveal">
-                                    <img src="images/hero-img-4.jpg" alt="">
+                                    <img src="{{ asset('images/hero-img-1.jpg') }}" alt="">
                                 </figure>
                             </div>
                             <div class="hero-img">
                                 <figure class="image-anime reveal">
-                                    <img src="images/hero-img-5.jpg" alt="">
+                                    <img src="{{ asset('images/hero-img-1.jpg') }}" alt="">
                                 </figure>
                             </div>
                         </div>

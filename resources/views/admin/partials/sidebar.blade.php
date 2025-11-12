@@ -11,19 +11,11 @@
     <!-- Sidebar Menu Start -->
     <nav class="sidebar-menu">
         <ul>
-            <!-- Dashboard -->
-            <li class="menu-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
-                <a href="{{ route('admin.dashboard') }}">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-
             <!-- Pages Section -->
             <li class="menu-section">
                 <span>Pages Management</span>
             </li>
-
+            <br><br>
             <li class="menu-item {{ request()->routeIs('admin.pages.home') ? 'active' : '' }}">
                 <a href="{{ route('admin.pages.home') }}">
                     <i class="fa-solid fa-house"></i>
