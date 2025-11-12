@@ -1,0 +1,742 @@
+/* =========================================
+   DIKELOLAIN - VCMS ADMIN STYLES
+   ========================================= */
+
+/* Admin Body */
+.admin-body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   ADMIN WRAPPER & LAYOUT
+   ========================================= */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+/* =========================================
+   ADMIN SIDEBAR
+   ========================================= */
+.admin-sidebar {
+    width: 280px;
+    background: #1a1a1a;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.admin-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.admin-sidebar::-webkit-scrollbar-track {
+    background: #2a2a2a;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 3px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    padding: 25px 20px;
+    border-bottom: 1px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+.vcms-badge {
+    background: #FFD700;
+    color: #1a1a1a;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    padding: 20px 0;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-section {
+    padding: 20px 20px 10px;
+    margin-top: 10px;
+}
+
+.menu-section span {
+    color: #888;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-item {
+    margin: 0;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-item a:hover {
+    background: #2a2a2a;
+    color: #FFD700;
+    padding-left: 25px;
+}
+
+.menu-item.active a {
+    background: #2a2a2a;
+    color: #FFD700;
+    border-left: 3px solid #FFD700;
+}
+
+.menu-item a i {
+    margin-right: 12px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-item a span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-logout {
+    margin-top: 20px;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 10px;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #2a2a2a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a1a1a;
+}
+
+.admin-user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FFD700;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.user-details p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+/* =========================================
+   ADMIN CONTENT AREA
+   ========================================= */
+.admin-content-area {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+    min-height: 100vh;
+    background: #fff;
+}
+
+/* Admin Topbar */
+.admin-topbar {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.admin-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    background: #f5f5f5;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.admin-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.vcms-mode-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFD700;
+    color: #1a1a1a;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.vcms-mode-indicator i {
+    font-size: 14px;
+}
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-preview,
+.btn-save-changes {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-preview {
+    background: #f5f5f5;
+    color: #333;
+    border: 1px solid #e5e5e5;
+}
+
+.btn-preview:hover {
+    background: #e5e5e5;
+}
+
+.btn-save-changes {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.btn-save-changes:hover {
+    background: #45a049;
+}
+
+/* =========================================
+   VCMS PREVIEW CONTAINER
+   ========================================= */
+.vcms-preview-container {
+    padding: 30px;
+    background: #fff;
+}
+
+/* =========================================
+   VCMS EDITABLE SECTIONS
+   ========================================= */
+.vcms-editable-section {
+    position: relative;
+    border: 2px dashed transparent;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+}
+
+.vcms-editable-section:hover {
+    border-color: #FFD700;
+    background: rgba(255, 215, 0, 0.02);
+}
+
+/* VCMS Edit Indicator (Main Section) */
+.vcms-edit-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.vcms-editable-section:hover .vcms-edit-indicator {
+    opacity: 1;
+}
+
+.vcms-edit-btn {
+    background: #FFD700;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vcms-edit-btn:hover {
+    background: #FFC700;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+.vcms-edit-btn i {
+    font-size: 12px;
+}
+
+/* VCMS Edit Indicator Small (For Items) */
+.vcms-editable-item {
+    position: relative;
+}
+
+.vcms-edit-indicator-small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background: #FFD700;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(255, 215, 0, 0.3);
+}
+
+.vcms-editable-item:hover .vcms-edit-indicator-small {
+    opacity: 1;
+}
+
+.vcms-edit-indicator-small i {
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.vcms-edit-indicator-small:hover {
+    transform: scale(1.1);
+}
+
+/* VCMS Notice */
+.vcms-notice {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 60px 0;
+}
+
+.vcms-notice h3 {
+    margin: 0 0 15px 0;
+    color: #856404;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.vcms-notice p {
+    margin: 10px 0;
+    color: #856404;
+    line-height: 1.6;
+}
+
+.vcms-notice strong {
+    font-weight: 700;
+}
+
+.vcms-notice code {
+    background: #ffe69c;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #664d03;
+}
+
+.vcms-notice ol {
+    margin: 15px 0;
+    padding-left: 25px;
+    color: #856404;
+}
+
+.vcms-notice ol li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* =========================================
+   VCMS EDIT MODAL
+   ========================================= */
+.vcms-edit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.vcms-edit-modal.active {
+    display: block;
+}
+
+.vcms-edit-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.vcms-edit-modal-content {
+    position: relative;
+    background: #fff;
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.vcms-edit-modal-header {
+    padding: 20px 30px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+.vcms-edit-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.vcms-modal-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.vcms-modal-close:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.vcms-edit-modal-body {
+    padding: 30px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.vcms-edit-modal-footer {
+    padding: 20px 30px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background: #f9f9f9;
+}
+
+.btn-cancel,
+.btn-save-modal {
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cancel {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.btn-cancel:hover {
+    background: #e5e5e5;
+}
+
+.btn-save-modal {
+    background: #FFD700;
+    color: #1a1a1a;
+}
+
+.btn-save-modal:hover {
+    background: #FFC700;
+}
+
+/* =========================================
+   VCMS FORM ELEMENTS
+   ========================================= */
+.vcms-form-group {
+    margin-bottom: 20px;
+}
+
+.vcms-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+.vcms-form-group small {
+    display: block;
+    margin-top: 6px;
+    color: #888;
+    font-size: 12px;
+}
+
+.vcms-input,
+.vcms-textarea,
+.vcms-select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.vcms-input:focus,
+.vcms-textarea:focus,
+.vcms-select:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+.vcms-textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+}
+
+.btn-add-image {
+    background: #f5f5f5;
+    border: 2px dashed #ccc;
+    padding: 40px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-add-image:hover {
+    background: #f9f9f9;
+    border-color: #FFD700;
+    color: #FFD700;
+}
+
+.btn-manage-services {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFD700;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-manage-services:hover {
+    background: #FFC700;
+    transform: translateY(-2px);
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.alert-info {
+    background: #e3f2fd;
+    border: 1px solid #2196f3;
+    color: #1976d2;
+}
+
+.vcms-notification {
+    position: fixed;
+    top: 20px;
+    right: -400px;
+    background: #4CAF50;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10000;
+    transition: all 0.3s ease;
+}
+
+.vcms-notification.show {
+    right: 20px;
+}
+
+.vcms-notification.success {
+    background: #4CAF50;
+}
+
+.vcms-notification.error {
+    background: #f44336;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 1024px) {
+    .admin-sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .admin-sidebar.active {
+        transform: translateX(0);
+    }
+    
+    .admin-content-area {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-topbar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .admin-topbar-right {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .vcms-mode-indicator {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+    
+    .admin-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .btn-preview,
+    .btn-save-changes {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .vcms-preview-container {
+        padding: 15px;
+    }
+}
