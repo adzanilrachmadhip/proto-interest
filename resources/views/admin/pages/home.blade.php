@@ -191,7 +191,7 @@
     <!-- 7. Team Section -->
     <!-- 8. Testimonials Section -->
 
-    <div class="vcms-notice">
+    <!-- <div class="vcms-notice">
         <h3><i class="fa-solid fa-info-circle"></i> Next Steps</h3>
         <p><strong>Action Required:</strong> Copy all remaining sections from <code>pages/home.blade.php</code></p>
         <p>Follow the VCMS pattern shown above (Hero & Trusted Clients sections)</p>
@@ -201,7 +201,7 @@
             <li>Add <code>vcms-editable-item</code> to individual editable parts</li>
             <li>Keep all existing HTML structure intact</li>
         </ol>
-    </div>
+    </div> -->
 
 @endsection
 

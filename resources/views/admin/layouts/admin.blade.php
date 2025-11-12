@@ -13,11 +13,15 @@
     <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/png">
 
     <!-- Main CSS Files -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/all-fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+   
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+	<link href="{{ asset('css/slicknav.min.css') }}" rel="stylesheet">
+	<link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}">
+	<link href="{{ asset('css/all.min.css') }}" rel="stylesheet" media="screen">
+	<link href="{{ asset('css/animate.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/mousecursor.css') }}">
+	<link href="{{ asset('css/custom.css') }}" rel="stylesheet" media="screen">
     
     <!-- Admin VCMS Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/admin-vcms.css') }}">
@@ -93,13 +97,24 @@
     </div>
 
     <!-- Main JS Files -->
-    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.appear.js') }}"></script>
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/validator.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.slicknav.js') }}"></script>
     <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('js/counter.js') }}"></script>
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+	<script src="{{ asset('js/isotope.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/SmoothScroll.js') }}"></script>
+    <script src="{{ asset('js/parallaxie.js') }}"></script>
+    <script src="{{ asset('js/gsap.min.js') }}"></script>
+    <script src="{{ asset('js/magiccursor.js') }}"></script>
+    <script src="{{ asset('js/SplitText.js') }}"></script>
+    <script src="{{ asset('js/ScrollTrigger.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.mb.YTPlayer.min.js') }}"></script>
     <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/function.js') }}"></script>
     
     <!-- Admin VCMS Custom JS -->
     <script src="{{ asset('js/admin-vcms.js') }}"></script>
