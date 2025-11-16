@@ -129,27 +129,27 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="trusted-client-logo">
-                                            <img src="images/client-logo-1.svg" alt="">
+                                            <img src="{{ asset('images/client-logo-1.svg') }}" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="trusted-client-logo">
-                                            <img src="images/client-logo-2.svg" alt="">
+                                            <img src="{{ asset('images/client-logo-2.svg') }}" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="trusted-client-logo">
-                                            <img src="images/client-logo-3.svg" alt="">
+                                            <img src="{{ asset('images/client-logo-3.svg') }}" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="trusted-client-logo">
-                                            <img src="images/client-logo-4.svg" alt="">
+                                            <img src="{{ asset('images/client-logo-3.svg') }}" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="trusted-client-logo">
-                                            <img src="images/client-logo-5.svg" alt="">
+                                            <img src="{{ asset('images/client-logo-4.svg') }}" alt="">
                                         </div>
                                     </div>
                                 </div>

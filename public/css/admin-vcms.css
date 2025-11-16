@@ -314,11 +314,11 @@
     transition: all 0.3s ease;
     margin-bottom: 0;
 }
-
+/* 
 .vcms-editable-section:hover {
     border-color: #FFD700;
     background: rgba(255, 215, 0, 0.02);
-}
+} */
 
 /* VCMS Edit Indicator (Main Section) */
 .vcms-edit-indicator {
@@ -331,7 +331,7 @@
 }
 
 .vcms-editable-section:hover .vcms-edit-indicator {
-    opacity: 1;
+    opacity: 10;
 }
 
 .vcms-edit-btn {
