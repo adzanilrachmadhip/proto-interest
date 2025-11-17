@@ -65,58 +65,6 @@
                 </a>
             </li>
 
-            <!-- Content Management Section -->
-            <li class="menu-section">
-                <span>Content Management</span>
-            </li>
-
-            <li class="menu-item {{ request()->routeIs('admin.portfolio.*') ? 'active' : '' }}">
-                <a href="{{ route('admin.portfolio.index') }}">
-                    <i class="fa-solid fa-images"></i>
-                    <span>Portfolio Items</span>
-                </a>
-            </li>
-
-            <li class="menu-item {{ request()->routeIs('admin.services.*') ? 'active' : '' }}">
-                <a href="{{ route('admin.services.index') }}">
-                    <i class="fa-solid fa-list"></i>
-                    <span>Services Items</span>
-                </a>
-            </li>
-
-            <li class="menu-item {{ request()->routeIs('admin.team.*') ? 'active' : '' }}">
-                <a href="{{ route('admin.team.index') }}">
-                    <i class="fa-solid fa-user-group"></i>
-                    <span>Team Members</span>
-                </a>
-            </li>
-
-            <li class="menu-item {{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}">
-                <a href="{{ route('admin.testimonials.index') }}">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <span>Testimonials</span>
-                </a>
-            </li>
-
-            <!-- Settings Section -->
-            <li class="menu-section">
-                <span>Settings</span>
-            </li>
-
-            <li class="menu-item {{ request()->routeIs('admin.settings.*') ? 'active' : '' }}">
-                <a href="{{ route('admin.settings.general') }}">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>General Settings</span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="{{ route('admin.media.library') }}">
-                    <i class="fa-solid fa-photo-film"></i>
-                    <span>Media Library</span>
-                </a>
-            </li>
-
             <!-- Logout -->
             <li class="menu-item menu-logout">
                 <a href="{{ route('admin.logout') }}">
